@@ -7,6 +7,7 @@ You need to export/save all your mails to a .eml file and put it in the same dir
 Then you can run the script with the following command:
 
 ```bash
+pip install -r requirements.txt
 python email_link_checker.py
 ```
 
@@ -18,4 +19,3 @@ python email_link_checker.py
 
 1. Basically, the script will read all the .eml files in the directory and extract the links from the body of the email.
 2. Then it will check if the domains of the links are valid or not according to VirusTotal.
-For now, I didn't implement the call to VirusTotal API, so I just made up some example dangerous domains.

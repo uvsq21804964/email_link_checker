@@ -1,4 +1,3 @@
-import chardet
 import email
 import requests
 from bs4 import BeautifulSoup
@@ -6,34 +5,43 @@ from urllib.parse import urlparse
 from pathlib import Path
 import os
 
-# Blacklist of dangerous domains to check against when analyzing URLs in emails
-DANGEROUS_DOMAINS = [
-    "example.com", "malicious.com", "phishing.com"
-]
+class bcolors:
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    DANGER = '\033[91m'
+    ENDC = '\033[0m'
+
+VIRUS_TOTAL_API_KEY = "464b7fe93085489a7777adf5a3d3d0f43c30e91c62430aa900fd5946a31561f0"
+URL = "https://www.virustotal.com/api/v3/domains/"
+TO_CHECK = ["malicious", "suspicious"]
 
 def extract_links_from_email(email_content):
     soup = BeautifulSoup(email_content, "html.parser")
     links = [a.get('href') for a in soup.find_all('a', href=True)]
     return links
 
-def is_dangerous_url(url):
-    # Check if the URL contains a dangerous domain
-    parsed_url = urlparse(url)
-    domain = parsed_url.netloc
-    if any(dangerous_domain in domain for dangerous_domain in DANGEROUS_DOMAINS):
-        return True
+def is_dangerous_domain(domain):
+    headers = {"accept": "application/json", "x-apikey": VIRUS_TOTAL_API_KEY}
+    response = requests.get(URL + domain, headers=headers)
+    json = response.json()
+    stats = json["data"]["attributes"]["last_analysis_stats"]
+    
+    dangerous = False
+    
+    print(f"Analyse du domaine {domain} :")
+    for key in stats.keys():
+        if stats[key] > 0:
+            print(f" * {key}: {stats[key]}")
+            if key in TO_CHECK:
+                dangerous = True
+            
+    return dangerous
 
-    try:
-        response = requests.get(url, timeout=5)
-        # Mock the response status code to test the dangerous URL detection
-        if response.status_code == 200:
-            return False
-        else:
-            return True
-    except requests.RequestException:
-        return True
-
-def analyze_email(email_file_path):
+def analyze_email(email_file_path, filename):
+    print(bcolors.OKCYAN + f"Analyse de l'email :")
+    print(filename + bcolors.ENDC, end="\n\n")
+     
     with open(email_file_path, 'rb') as file:
         msg = email.message_from_binary_file(file)
         # Retrieve the email encoding
@@ -47,14 +55,24 @@ def analyze_email(email_file_path):
 
         # If the email is in HTML format, extract the links
         if 'html' in msg.get_content_type():
+            dangerous = False
             links = extract_links_from_email(email_content)
-            for link in links:
-                if is_dangerous_url(link):
-                    print(f"Potentiel site dangereux détecté : {link}")
+            domains = [urlparse(link).netloc for link in links]
+            for domain in domains:
+                if is_dangerous_domain(domain):
+                    print(bcolors.WARNING + f"Potentiel domaine dangereux détecté : {domain}\n"  + bcolors.ENDC)
+                    dangerous = True
                 else:
-                    print(f"Site sûr détecté : {link}")
+                    print(bcolors.OKGREEN + f"Domaine sûr détecté : {domain}\n" + bcolors.ENDC)
         else:
-            print("L'email n'est pas au format HTML")
+            print("L'email n'est pas au format HTML\n")
+            return
+    
+    if dangerous:
+        print(bcolors.DANGER + f"L'email '{filename}' contient des liens dangereux!" + bcolors.ENDC, end="\n"*3)
+    else:
+        print(bcolors.OKCYAN + f"L'email '{filename}' ne contient pas de liens dangereux." + bcolors.ENDC, end="\n"*3)
+            
 
 if __name__ == "__main__":
     # Retrieve the directory of the script
@@ -64,6 +82,4 @@ if __name__ == "__main__":
     for filename in os.listdir(script_dir):
         file_path = os.path.join(script_dir, filename)
         if os.path.isfile(file_path) and filename.endswith(".eml"):
-            print(f"Analyse de l'email : {filename}")
-            analyze_email(file_path)
-            print(f"Fins de l'analyse de l'email : {filename}")
+            analyze_email(file_path, filename)

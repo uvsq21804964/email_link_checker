@@ -1,0 +1,2345 @@
+Received: from DU0P192MB1637.EURP192.PROD.OUTLOOK.COM (2603:10a6:10:340::10)
+ by AS8P192MB2144.EURP192.PROD.OUTLOOK.COM with HTTPS; Thu, 12 Sep 2024
+ 07:13:37 +0000
+Received: from BN9PR03CA0717.namprd03.prod.outlook.com (2603:10b6:408:ef::32)
+ by DU0P192MB1637.EURP192.PROD.OUTLOOK.COM (2603:10a6:10:340::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7962.17; Thu, 12 Sep
+ 2024 07:13:35 +0000
+Received: from BL6PEPF00020E64.namprd04.prod.outlook.com
+ (2603:10b6:408:ef:cafe::64) by BN9PR03CA0717.outlook.office365.com
+ (2603:10b6:408:ef::32) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7939.24 via Frontend
+ Transport; Thu, 12 Sep 2024 07:13:34 +0000
+Authentication-Results: spf=pass (sender IP is 193.108.68.115)
+ smtp.mailfrom=fnac.com; dkim=pass (signature was verified)
+ header.d=fnac.com;dmarc=pass action=none header.from=fnac.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of fnac.com designates
+ 193.108.68.115 as permitted sender) receiver=protection.outlook.com;
+ client-ip=193.108.68.115; helo=mta5-fnacdarty.fnac.com; pr=C
+Received: from mta5-fnacdarty.fnac.com (193.108.68.115) by
+ BL6PEPF00020E64.mail.protection.outlook.com (10.167.249.25) with Microsoft
+ SMTP Server id 15.20.7918.13 via Frontend Transport; Thu, 12 Sep 2024
+ 07:13:33 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:AEBECB5C08D30361DC4F49DE99EBD42F67436719B2822B2AA664657C48454956;UpperCasedChecksum:2EFCA46BD827C9D60CEC2AE86041C083A0D37345AECAF63ACF6A8D20A86F49FE;SizeAsReceived:1329;Count:12
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	s=default;
+	d=fnac.com;
+	h=domainkey-signature:from:subject:date:to:reply-to:mime-version:x-mailer:message-id:content-type:content-transfer-encoding;
+	bh=QQ877bqUFVnmhd73PRNGp7nDEmS+F5LKB8jQd+EDANk=;
+	b=MBvdmoMGcaHp/V6lU/RQBZfVCpi9Ju2Dh9H8RxyUl5GmxVuEfl/1hHf8MTNZ8n9J6LCSSLnaEz3jtTaaZO8Bdadh66woKxfA3WEISMU5zEvFB+UD7U8oKiqK8hFmw9d4hnye5iGsG2fwBV9TSMHc+t2N//X2TVZLktld0CDEaDk=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns;
+	s=default;
+	d=fnac.com;
+	h=From:Subject:Date:To:Reply-To:MIME-Version:X-mailer:Message-ID:Content-Type:Content-Transfer-Encoding;
+	b=dofW2T2J0bgqHG/zHIXoWy8ACiKlNkFYjwZlOR1efzQUv41HAoroD9CnIfZerEqfMdc2fRYYhCKT2BP4vQMQj4WPNBTaR0OeYox+Z/TIectYeKqQHsrcEtc5MbViVB9SjgGWfGOuBzwefGcyEis/Sv9T59DHYN0zE5ITyZE0E5k=
+From: "Fnac Vie Digitale" <ma-commande@fnac.com>
+Subject: =?windows-1252?Q?Fnac_Vie_Digitale_365_Famille_(mensuel)_:_insta?=
+ =?windows-1252?Q?llez_vos_services_!?=
+Date: Thu, 12 Sep 2024 09:13:31 +0200
+To: <tomabbouz@outlook.com>
+Reply-To: "NE PAS REPONDRE <Ne-pas-repondre@fnac.com>" <Ne-pas-repondre@fnac.com>
+X-mailer: nlserver, Build 6.7.0
+Message-ID: <NM67C2D9F1908184E15FD_PRD_NeolaneMid3@fnac.com>
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 12
+Return-Path: neolane3@fnac.com
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Sep 2024 07:13:34.2285
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 72e961ed-df08-4c44-40e4-08dcd2fa6a07
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ BL6PEPF00020E64:EE_|DU0P192MB1637:EE_|AS8P192MB2144:EE_
+X-MS-Exchange-Organization-AuthSource:
+ BL6PEPF00020E64.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: 9/11/2024 11:56:00 PM
+X-MS-Office365-Filtering-Correlation-Id: 72e961ed-df08-4c44-40e4-08dcd2fa6a07
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 193.108.68.115
+X-SID-PRA: MA-COMMANDE@FNAC.COM
+X-SID-Result: PASS
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam:
+ BCL:2;ARA:1444111002|461199028|1680799051|10300799029|9000799047|9400799024|8516399012|21101999012|4302099013|1380799030|1370799030|1360799030|3412199025|440099028|1290799027|1602099012;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Sep 2024 07:13:33.9785
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 72e961ed-df08-4c44-40e4-08dcd2fa6a07
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL6PEPF00020E64.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU0P192MB1637
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.6278885
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7962.017
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000308)(920221119095)(90000117)(920221120095)(90010023)(91010020)(91040095)(9050020)(9100341)(944500132)(4810010)(4910033)(9910022)(9510006)(10110021)(9320005)(120001)(1110175);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?v9BemJ5YJ5WWPbLNzx/3iBY18vQ3N5VGNSyfH+hgiV/SivRHlO3iAVyc?=
+ =?Windows-1252?Q?JJKZIyBHZ35TQAqpdOrx165dXPgkCYUhZ4FIqglJxGvQpPfS5MlmfiKG?=
+ =?Windows-1252?Q?50FxMWqcAdSUJs0c7TFRNI27TQJ8aAKs77tWvX9A/htca2O5YZc9FrsZ?=
+ =?Windows-1252?Q?hxe1Xs5twv9qp/uO1cx5SAfTKMQ+oMSqH8iJ5OtfCx7DxHZ6h2b3H8W7?=
+ =?Windows-1252?Q?84kynJmQIjPUSpWHMvUj2PuBjczsHTk0sfigZJQPQQOWph/Jljf97Af0?=
+ =?Windows-1252?Q?8oDjrBqOzNu9t2gQqBRtg9fu6VRWTiAecKMNaTODPxcSe9q7KMT7qMxk?=
+ =?Windows-1252?Q?cf7kn9DO3nKR56W37VO4aMVNaH8QWY4eoLq+CRScP/gH6I1e2Nn3YXng?=
+ =?Windows-1252?Q?XjNca71fRjQ4+qbezdIr4XKRRgGg48fQBvLtbWyAeBK4laiMxX3zUE9f?=
+ =?Windows-1252?Q?rLbY2i4HLIwUsxnBKF0oIr8OAGNiGB30/fijq7Nw6VJpjDTibpPLxOhT?=
+ =?Windows-1252?Q?JbjjpyGTVcfOAhh0Dq12w2ZnWGuUSvH5Y6/dv91wJ2W9G073EuT5nLvL?=
+ =?Windows-1252?Q?XHVyOUDW1frvJT+wtaK0WFy1k1z1i0RTIj+kdJ89nwMwSwbhWKrm/UlP?=
+ =?Windows-1252?Q?4MLLMTy8m1Fe83AGdIEzGOkzUw9p26u5FWQHurTpKNO+PpY6i+0wv8xd?=
+ =?Windows-1252?Q?38+rYLSDZRa0pfm1qh0g1gChxXvU7Nv06p7wToBPVnchefZvq5RWLyXe?=
+ =?Windows-1252?Q?y140bajj6wzK3ggOrCBrQXunrBR5Vz9b8OounL5ufUdSqF5kD0lSysOG?=
+ =?Windows-1252?Q?oH5TpYKxpWC8jR4d52iTobI2+s7U3Ww2Ae4BPuD1z1hKMrWfANxLcA1z?=
+ =?Windows-1252?Q?YsUZ83paBrA6wRpgk1Rsdyj0II2FR0NzH8cvQTaIjvUbTkN0fa+3GHTB?=
+ =?Windows-1252?Q?xbQPfSBTBRxSPpRcBPACfIay975nyWvHENbZ+unUkQV5iPM9Ddk6+irm?=
+ =?Windows-1252?Q?m7jM9etJtPzVyVoqY0RGXs4Fs4Q6K8FrUbHA5KCSm8Z4N/yx3KBEN8JH?=
+ =?Windows-1252?Q?KQ3bptityzL4YeZPxoy3eyV/SzLNnHyn5Jg3aSWNp7v//y8TV52nAf7B?=
+ =?Windows-1252?Q?F44ocVUtIVxwpt5gqMOE6wqHxITIObgJa2T4+9Zf/p4rVqox9g9roT6R?=
+ =?Windows-1252?Q?iu6f2eYXYVwp7Px56uloS8v+Y8ZmyeabgW8nM6xz3vHWpraKlmMzD++I?=
+ =?Windows-1252?Q?IP8C+1V9GEj9lHbUGHQ3sdKl8CXp+3LB73ADirOmkRvzjXiln1aA9/C4?=
+ =?Windows-1252?Q?osFHBWHuWnGKgU7I07tO4L9KIQs6aOdtFAcRv+VrFChmx0jRhmOOrlpM?=
+ =?Windows-1252?Q?/xrqwmBQvSfC7mT//VIr4h4PrNLMBrOa1HrLvB4JuBmCNDdIIHC8Weez?=
+ =?Windows-1252?Q?o5Tqy53PqSV1GKP0zX59TOdV7UELlJPY6mKxWo41PAlV61D09k6NMEN/?=
+ =?Windows-1252?Q?rwhoEZcT43zEmBVRN7YqcOFF9405cwPSa4DhrnmWijDg7vNPn9iAiGtR?=
+ =?Windows-1252?Q?dFJQCDzmwfuX0m9wk7lmavaWhm+MYFU8hJDvUasCkOBSeJYxjK8ULzc0?=
+ =?Windows-1252?Q?s0CeMTzzCWQHsgmMBX5lxSXHXWey59NVs9flFwJOv7Og4AutRntE+71V?=
+ =?Windows-1252?Q?JXAIM3JHzcq8Mv7qDdEsNCoiFw9yqB82SBalB00/v/td5nRKWUT4BcZR?=
+ =?Windows-1252?Q?WHzVsVkXS3uPc0iDqz2jD2gb3Ur8g6TowYsrKvFlv08obB8zu4yqs5b+?=
+ =?Windows-1252?Q?WyjIpTcKSIIcauaYUpCpuFeH1IzZ5asv2who+jDLkcPuF+ldObF/p0k4?=
+ =?Windows-1252?Q?3l83ON90mNUbimgJQIsIFoGDELkjbgkbnxAHROgFRxuWAWfAOgCmlB2C?=
+ =?Windows-1252?Q?4gu/G5Adi/pr46AX9K3jVNhDX4GloDq8l00jH/eODMV0i0l8aSh1X/Ou?=
+ =?Windows-1252?Q?jQeEEgFgvOIK5HMw2BZBLBo9FECRpF1TpH/OEzD/OJwazWXKwNZM4JAY?=
+ =?Windows-1252?Q?2UR/JlubQnXulsc4ZswVQM668zBV3HfbgTJ6p3KtS85tyldk1esPPFbC?=
+ =?Windows-1252?Q?1V9WUhEGrh+iidJBeeicTNqHpRYmUzR2Gk8EEQppwV73610to4nOOSsJ?=
+ =?Windows-1252?Q?C4y/WYTp/8M9ZXxk9eaT6/d6H1BSk5g4pibJ8GVJYiOgXCrKS1P1Tiir?=
+ =?Windows-1252?Q?myGDdzMYPoFPxKo0FoF54FxY07LITjdv2BN0MPJpcjoqxyQ2wGQTtJzk?=
+ =?Windows-1252?Q?fYDjCnm0PU23aktR/9F8Cq1sg/k=3D?=
+MIME-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"https://www.w=
+3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:=
+schemas-microsoft-com:office:office"><head><!-- Avoid image scaling for Out=
+look 2013 120dpi  --><!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]--><!-- This part depend on the router solution and the langua=
+ge used in email --><!-- Compatibility with Windows Phones -->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252"><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3D9; IE=3D8; IE=3D7=
+; IE=3DEDGE">
+    <!-- Viewport initialisation -->
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <!-- Email title should be email subject -->
+    <title></title>
+    <!-- Here comes all the responsive part -->
+    <style type=3D"text/css">
+      /* RESET CSS */
+      #outlook a {
+      padding: 0
+      }
+      .t_h135px {
+      height: 135px !important;
+      }
+      span.MsoHyperlink {
+      mso-style-priority: 1;
+      color: inherit
+      }
+      span.MsoHyperlinkFollowed {
+      mso-style-priority: 1;
+      color: inherit
+      }
+      body {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      padding: 0;
+      color: #000000;
+      margin: 0 auto
+      }
+      td {
+      line-height: 100%
+      }
+      div[style*=3D"margin: 16px 0"] {
+      margin: 0 !important;
+      }
+      .ExternalClass {
+      width: 100%;
+      display: block !important;
+      }
+      .ExternalClass,
+      .ExternalClass *,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+      line-height: 100%
+      }
+      img {
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic
+      }
+      a img {
+      border: none
+      }
+      u+* img+div {
+      display: none
+      }
+      table td {
+      border-collapse: collapse;
+      mso-line-height-rule: exactly
+      }
+      table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt
+      }
+      a {
+      color: inherit;
+      text-decoration: none;
+      mso-line-height-rule: exactly
+      }
+      .appleLinks,
+      .appleLinksWhite {
+      text-decoration: none !important;
+      }
+      a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      }
+      table[class^=3D"ox"] sup {
+      font-size: 0.7em;
+      vertical-align: baseline;
+      }
+      sup {
+      font-size: 0.8em;
+      vertical-align: text-top;
+      line-height: 1;
+      height: 0;
+      mso-text-raise: 24%
+      }
+      div>u+* table {
+      zoom: 100%
+      }
+      /*         table {
+      border: 1px solid red !important;
+      }
+      td {
+      border: 1px solid blue !important;
+      } */
+      /* EO - RESET CSS */
+      /* Responsive breakpoint for tablet */
+      @media screen and (min-width: 451px) and (max-width: 640px),
+      screen and (min-device-width: 451px) and (max-device-width: 640px) {
+      .t_flnone {
+      float: none !important;
+      }
+      .t_w100p {
+      width: 100% !important;
+      }
+      .t_flright {
+      float: right !important;
+      }
+      .t_w41p {
+      width: 41% !important;
+      }
+      .t_flleft {
+      float: left !important;
+      }
+      .t_pt30px {
+      padding-top: 30px !important;
+      }
+      .t_taleft {
+      text-align: left !important;
+      }
+      .t_w5p {
+      width: 5% !important;
+      }
+      .t_w54p {
+      width: 54% !important;
+      }
+      .t_w95p {
+      width: 95% !important;
+      }
+      .t_fz26px {
+      font-size: 26px !important;
+      }
+      .t_lh29px {
+      line-height: 29px !important;
+      }
+      .t_w220px {
+      width: 220px !important;
+      }
+      .t_fsnormal {
+      font-style: normal !important;
+      }
+      .t_bxzborderminbox {
+      box-sizing: border-box !important;
+      }
+      .t_w78p {
+      width: 78% !important;
+      }
+      .t_fz20px {
+      font-size: 20px !important;
+      }
+      .t_w67p {
+      width: 67% !important;
+      }
+      .t_h436px {
+      height: 436px !important;
+      }
+      .t_w10p {
+      width: 10% !important;
+      }
+      .t_w {
+      width: undefined !important;
+      }
+      .t_w90p {
+      width: 90% !important;
+      }
+      .t_fl {
+      float: undefined !important;
+      }
+      .t_w80p {
+      width: 80% !important;
+      }
+      .t_w2p {
+      width: 2% !important;
+      }
+      .t_w31p {
+      width: 31% !important;
+      }
+      .t_w40p {
+      width: 40% !important;
+      }
+      .t_pt0px {
+      padding-top: 0px !important;
+      }
+      .t_pl5px {
+      padding-left: 5px !important;
+      }
+      .t_w50p {
+      width: 50% !important;
+      }
+      .t_w30p {
+      width: 30% !important;
+      }
+      .t_h10px {
+      height: 10px !important;
+      }
+      .t_fz10px {
+      font-size: 10px !important;
+      }
+      .t_lh10px {
+      line-height: 10px !important;
+      }
+      .t_h100p {
+      height: 100% !important;
+      }
+      .t_w32p {
+      width: 32% !important;
+      }
+      .t_tacenter {
+      text-align: center !important;
+      }
+      .t_w48p {
+      width: 48% !important;
+      }
+      .t_h316px {
+      height: 316px !important;
+      }
+      .t_w35p {
+      width: 35% !important;
+      }
+      .t_w85p {
+      width: 85% !important;
+      }
+      .t_h406px {
+      height: 406px !important;
+      }
+      .t_pt15px {
+      padding-top: 15px !important;
+      }
+      .t_pt35px {
+      padding-top: 35px !important;
+      }
+      .t_pb20px {
+      padding-bottom: 20px !important;
+      }
+      .t_pl10px {
+      padding-left: 10px !important;
+      }
+      .t_w70p {
+      width: 70% !important;
+      }
+      .t_h154px {
+      height: 154px !important;
+      }
+      .t_w20p {
+      width: 20% !important;
+      }
+      .t_lh18px {
+      line-height: 18px !important;
+      }
+      .t_v {
+      display: block !important;
+      font-size: inherit !important;
+      max-height: none !important;
+      max-width: none !important;
+      overflow: visible !important;
+      }
+      .t_dnone {
+      display: none !important;
+      }
+      .vAlign-top {
+      vertical-align: top !important;
+      }
+      }
+      /* Responsive breakpoint for mobile */
+      @media screen and (max-width: 450px),
+      screen and (max-device-width: 450px) {
+      .m_h100px {
+      height: 100px !important;
+      }
+      .m_flnone {
+      float: none !important;
+      }
+      .m_w100p {
+      width: 100% !important;
+      }
+      .m_flright {
+      float: right !important;
+      }
+      .m_flleft {
+      float: left !important;
+      }
+      .m_w60p {
+      width: 60% !important;
+      }
+      .m_w0p {
+      width: 0% !important;
+      }
+      .m_mauto {
+      margin: auto !important;
+      }
+      .m_mLRautoTZeroBTwenty {
+      margin: 0 auto 20px auto !important;
+      }
+      .m_w90p {
+      width: 90% !important;
+      }
+      .m_fz22px {
+      font-size: 22px !important;
+      }
+      .m_pt5px {
+      padding-top: 5px !important;
+      }
+      .m_lh24px {
+      line-height: 24px !important;
+      }
+      .m_h10px {
+      height: 10px !important;
+      }
+      .m_fz10px {
+      font-size: 10px !important;
+      }
+      .m_lh10px {
+      line-height: 10px !important;
+      }
+      .m_w100px {
+      width: 100px !important;
+      }
+      .m_w240px {
+      width: 240px !important;
+      }
+      .m_pb15px {
+      padding-bottom: 15px !important;
+      }
+      .m_pt20px {
+      padding-top: 20px !important;
+      }
+      .m_fsnormal {
+      font-style: normal !important;
+      }
+      .m_bxzborderminbox {
+      box-sizing: border-box !important;
+      }
+      .m_fz20px {
+      font-size: 20px !important;
+      }
+      .m_w16p {
+      width: 16% !important;
+      }
+      .m_w {
+      width: undefined !important;
+      }
+      .m_w84p {
+      width: 84% !important;
+      }
+      .m_fl {
+      float: undefined !important;
+      }
+      .m_pr5px {
+      padding-right: 5px !important;
+      }
+      .m_w70p {
+      width: 70% !important;
+      }
+      .m_w25p {
+      width: 25% !important;
+      }
+      .m_w55p {
+      width: 55% !important;
+      }
+      .m_w12px {
+      width: 12px !important;
+      }
+      .m_pr10px {
+      padding-right: 10px !important;
+      }
+      .m_pl10px {
+      padding-left: 10px !important;
+      }
+      .m_pb25px {
+      padding-bottom: 25px !important;
+      }
+      .m_pt8px {
+      padding-top: 8px !important;
+      }
+      .m_bgcf5f5f5 {
+      background-color: #f5f5f5 !important;
+      }
+      .m_pt50px {
+      padding-top: 50px !important;
+      }
+      .m_tacenter {
+      text-align: center !important;
+      }
+      .m_pt0px {
+      padding-top: 0px !important;
+      }
+      .m_pt6px {
+      padding-top: 6px !important;
+      }
+      .m_h20px {
+      height: 20px !important;
+      }
+      .m_lh20px {
+      line-height: 20px !important;
+      }
+      .m_h100p {
+      height: 100% !important;
+      }
+      .m_pt15px {
+      padding-top: 15px !important;
+      }
+      .m_h300px {
+      height: 300px !important;
+      }
+      .m_h280px {
+      height: 280px !important;
+      }
+      .m_w20p {
+      width: 20% !important;
+      }
+      .m_w110px {
+      width: 110px !important;
+      }
+      .m_w80p {
+      width: 80% !important;
+      }
+      .m_pt10px {
+      padding-top: 10px !important;
+      }
+      .m_fz14px {
+      font-size: 14px !important;
+      }
+      .m_pl20px {
+      padding-left: 20px !important;
+      }
+      .m_w75p {
+      width: 75% !important;
+      }
+      .m_fz13px {
+      font-size: 13px !important;
+      }
+      .m_lh18px {
+      line-height: 18px !important;
+      }
+      .m_v {
+      display: block !important;
+      font-size: inherit !important;
+      max-height: none !important;
+      max-width: none !important;
+      overflow: visible !important;
+      }
+      .m_dnone {
+      display: none !important;
+      }
+      .vAlign-top {
+      vertical-align: top !important;
+      }
+      .displTabCell {
+      display: table-cell !important;
+      }
+      .resp-hide {
+      display: none !important
+      }
+      .m_ExternalClass {
+      width: 100%  !important;
+      display: block !important;
+      }
+      .m_wFitContent {
+      width: fit-content !important;
+      }
+      .m_m0auto  {
+      margin: 0 auto !important;
+      }
+      .m_pl20px {
+      padding-left: 20px !important
+      }
+      .m_inBlockCenter {
+      display: inline-block !important;
+      text-align: center !important;
+      width: 100% !important;
+      }
+      .m_mT20{
+      margin-top: 20px !important;
+      }
+      .m_center {
+      margin: 0 auto !important;
+      }
+      .m_plr10px{
+      padding: 0 10px !important;
+      }
+      .m_pr20px {
+      padding-right: 20px !important
+      }
+      .m_wInitial {
+      width: initial !important;
+      }
+      .m_contentCenter {
+      display: inline-block !important;
+      width: 100% !important;
+      }
+      .m_pr20px {
+      padding-right: 20px !important;
+      }
+      .m_wInitial {
+      width: initial !important;
+      }
+      .m_pb20px {
+      padding-bottom: 20px !important;
+      }
+      .m_w50p {
+      width: 50% !important;
+      }
+      .m_w48p {
+      width: 48% !important
+      }
+      .m_w30p {
+      width: 30% !important;
+      }
+      .m_w95p {
+      width: 95% !important
+      }
+      .m_w4p {
+      width: 4% !important
+      }
+      .m_w25p {
+      width: 25% !important
+      }
+      .m_h60px {
+      height: 60px !important
+      }
+      .m_h120px {
+      height: 120px !important
+      }
+      .m_h186px {
+      height: 186px !important
+      }
+      .m_h241px {
+      height: 241px !important
+      }
+      .m_w15p {
+      width: 15% !important
+      }
+      .m_pb5px {
+      padding-bottom: 5px !important
+      }
+      }
+      /* These classes are mandatory for Outlook app in landscape mode */
+      @media (orientation: landscape) and (min-width: 640px) {
+      .d_center {
+      float: none !important;
+      margin: auto !important;
+      }
+      .d_left {
+      float: left !important;
+      }
+      .d_right {
+      float: right !important;
+      }
+      .vAlign-top {
+      vertical-align: top !important;
+      }
+      }
+      @media (max-width: 480px) {
+      .blocResp-heightFix {
+      height: 0 !important;
+      padding: 20px 0 !important;
+      }
+      .resp-hide {
+      display: none !important;
+      }
+      .padTopZero {
+      padding-top: 0 !important;
+      }
+      .padBotZero {
+      padding-bottom: 0 !important;
+      }
+      .padTopTwenty {
+      padding-top: 20px !important;
+      }
+      }  =20
+    </style>
+  </head>
+  <!-- BODY / b4f7e176-9121-4b1e-9c2a-8d14701768e0 -->
+  <body style=3D"background-color:#ffffff">
+    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" =
+style=3D"width:100%; margin-top:-1px" role=3D"presentation">
+      <!-- Force Gmail app to render desktop version of email -->
+      <!-- Dev note : This hack create a empty line at the top of the campa=
+ign, which is canceled by mother table negative margin -->
+      <tr class=3D"t_dnone m_dnone">
+        <td height=3D"1" style=3D"height:1px;max-height:1px;font-size:1px;l=
+ine-height:1px">
+          <span style=3D"display:block;width:640px;min-width:608px">&nbsp;<=
+/span>
+        </td>
+      </tr>
+      <!-- Email content -->
+      <tr>
+        <td style=3D"background-color:#f5f5f5">
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" align=3D"center" style=3D"margin:auto;clear:both;width:100%;backgroun=
+d-color:#f5f5f5" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+            <tr>
+              <td height=3D"20" style=3D"height:20px;background-color:#f5f5=
+f5;font-size:20px;line-height:20px"> &nbsp; </td>
+            </tr>
+          </table>
+          <!-- BLOCK HEADER -->
+          <!-- WRAPPER / c8821c4b-f712-4cc5-baff-47ee32f66344 -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+608" align=3D"center" style=3D"margin:auto;background-color:#ffffff;width:6=
+08px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w90p m_=
+mT20">
+            <tr>
+              <td class=3D"m_contentCenter" width=3D"336" style=3D"width:33=
+6px">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"336" style=3D"width:336px" class=3D"d_right t_flright t_w84p m_m0auto=
+ m_wFitContent">
+                  <tr>
+                    <td style=3D"padding-top:30px;padding-bottom:30px;paddi=
+ng-left:15px;" align=3D"left" class=3D"m_pt20px m_w100p m_pl20px">
+                      <img src=3D"https://static.fnac-static.com/multimedia=
+/Mails/2023/AUTO/FnacVieDigitale/Logo_FnacVieDigitale.png" alt=3D"" width=
+=3D"150" style=3D"display:block;border:none" class=3D"t_w100p">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class=3D"m_contentCenter m_pb20px" width=3D"272" style=3D=
+"width:272px">
+                <!-- WRAPPER / 2ac05ddb-2eff-408a-b995-28bc88beb9f1 -->
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"272" style=3D"width:272px" class=3D"d_right t_flright t_w84p m_wFitCo=
+ntent m_m0auto m_w100p m_tacenter">
+                  <tr>
+                    <td style=3D"padding-right:10px; vertical-align: top;" =
+class=3D"m_inBlockCenter">
+                      <img src=3D"https://static.fnac-static.com/multimedia=
+/Mails/2023/AUTO/FnacVieDigitale/picto_user.png" alt=3D"Logo espace client"=
+ width=3D"11" style=3D"display:inlin-block;border:none" class=3D"t_w100p">
+                    </td>
+                    <td style=3D"vertical-align: top;" class=3D"m_wFitConte=
+nt m_ExternalClass">
+                      <!-- text / 6d250d61-34e4-4e6a-ac8e-6924e0e20ec6 -->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"218" style=3D"width:218px" class=3D"t_flnone t_mauto t_w100p m_=
+flnone m_w100p m_tacenter" role=3D"presentation">
+                        <tr>
+                          <td style=3D"font-family:Arial,Helvetica,sans-ser=
+if;color:#13100D;font-size:14px;padding-bottom:5px;vertical-align:middle;fo=
+nt-weight:bold" class=3D"m_fz11px m_pt10px m_pb2px m_tacenter">
+                            Tom ABBOUZ
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- EO - text - 6d250d61-34e4-4e6a-ac8e-6924e0e20ec6=
+ -->
+                      <!-- text / a6fa017d-5280-4cde-a539-c618e24d6a76 -->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"218" style=3D"width:218px" class=3D"t_flnone t_mauto t_w100p m_=
+flnone m_mauto m_w100p" role=3D"presentation">
+                        <tr>
+                          <td style=3D"font-family:Arial,Helvetica,sans-ser=
+if;color:#13100D;font-size:14px;vertical-align:middle" class=3D"m_fz11px m_=
+tacenter">
+                            FDSABBOU0003818439 =20
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- EO - text - a6fa017d-5280-4cde-a539-c618e24d6a76=
+ -->
+                      <!-- text / 8e826f64-4daa-4fd7-8fb5-7dc8d087db90 -->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"218" style=3D"width:218px" class=3D"t_flnone t_mauto t_w100p m_=
+flnone m_w100p" role=3D"presentation">
+                        <tr>
+                          <td style=3D"font-family:Arial,Helvetica,sans-ser=
+if;color:#3ea3dc;font-size:14px;padding-top:5px;vertical-align:middle;font-=
+weight:bold" class=3D"m_fz11px m_pt2px m_tacenter">
+                            <span style=3D"color:#3ea3dc">Fnac Vie Digitale=
+ 365 Famille (mensuel)</span>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- EO - text - 8e826f64-4daa-4fd7-8fb5-7dc8d087db90=
+ -->
+                    </td>
+                  </tr>
+                </table>
+                <!-- EO - WRAPPER / 2ac05ddb-2eff-408a-b995-28bc88beb9f1 --=
+>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - WRAPPER / c8821c4b-f712-4cc5-baff-47ee32f66344 -->
+          <!-- FIN BLOCK HEADER -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" align=3D"center" style=3D"margin:auto;clear:both;width:100%;backgroun=
+d-color:#f5f5f5" class=3D"d_center t_w100p m_w90p" role=3D"presentation">
+            <tr>
+              <td height=3D"20" style=3D"height:20px;background-color:#f5f5=
+f5;font-size:20px;line-height:20px"> &nbsp; </td>
+            </tr>
+          </table>
+          <!-- SECTION / INTRODUCTION -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" role=3D"presentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;background-color:#ffffff;w=
+idth:608px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w=
+90p">
+                  <tr>
+                    <td>
+                      <!-- COLUMN / 40beee0a-99f9-412d-86d0-23281c2a9a28 --=
+>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"224" align=3D"left" style=3D"width:224px" class=3D"d_left t_w41=
+p t_flleft m_w100p m_flright" role=3D"presentation">
+                        <tr>
+                          <td>
+                            <!-- image / 1c13a902-304c-47df-a36b-c92d1f921c=
+c5 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"224" align=3D"left" style=3D"width:224px" class=3D"d_left=
+ t_flleft t_w100p m_flleft m_w60p" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"100%" align=3D"center" class=3D"d_center t_w100p m_=
+w100p" role=3D"presentation">
+                                    <tr>
+                                      <td style=3D"padding-top:20px;padding=
+-bottom:10px;text-align:center" class=3D"t_pt30px t_taleft">
+                                        <img src=3D"https://static.fnac-sta=
+tic.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/photos-header-relance-ac=
+tivation.png" alt=3D"" width=3D"224" style=3D"font-family:Arial,Helvetica,s=
+ans-serif;font-size:13px;color:#000000;line-height:13px;display:block;borde=
+r:none" class=3D"t_w100p m_w100p">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- EO - image - 1c13a902-304c-47df-a36b-c92d1=
+f921cc5 -->
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if gte mso 9]>=20
+                    </td>
+                    <td style=3D"vertical-align:top;border-collapse:collaps=
+e">
+                      <![endif]-->
+                      <!-- COLUMN / a6041569-def0-4848-90db-f72da00f8a1b --=
+>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"32" align=3D"left" style=3D"width:32px" class=3D"d_left t_w5p t=
+_flleft m_w0p m_dnone m_flright" role=3D"presentation">
+                        <tr>
+                          <td>
+                            <span>&nbsp;</span>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if gte mso 9]>=20
+                    </td>
+                    <td style=3D"vertical-align:top;border-collapse:collaps=
+e">
+                      <![endif]-->
+                      <!-- COLUMN / 172c19ff-73f7-478c-9e78-2612f346519c --=
+>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"352" align=3D"right" style=3D"width:352px" class=3D"d_right t_w=
+54p t_flright m_w100p m_flright" role=3D"presentation">
+                        <tr>
+                          <td>
+                            <!-- spacer / d2e7d645-332d-4c45-b258-af04df69e=
+761 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"352" align=3D"center" style=3D"margin:auto;clear:both;wid=
+th:352px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                              <tr>
+                                <td height=3D"20" style=3D"height:20px;font=
+-size:20px;line-height:20px"> &nbsp; </td>
+                              </tr>
+                            </table>
+                            <!-- EO - spacer - d2e7d645-332d-4c45-b258-af04=
+df69e761 -->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- text / 6b1e79e8-d8d2-4540-83f7-e0ae2ae538d=
+9 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"352" align=3D"left" style=3D"width:352px" class=3D"d_left=
+ t_flleft t_w95p m_flnone m_mauto m_w90p" role=3D"presentation">
+                              <tr>
+                                <td style=3D"font-family:Arial,Helvetica,sa=
+ns-serif;color:#3ea3dc;text-align:left;text-transform:uppercase;font-size:2=
+8px;padding-top:25px;padding-right:20px;vertical-align:middle;line-height:3=
+6px;font-weight:bold" class=3D"t_fz26px t_lh29px m_fz22px m_pt5px m_lh24px"=
+> PLUS QUE QUELQUES CLICS, Tom ABBOUZ... </td>
+                              </tr>
+                            </table>
+                            <!-- EO - text - 6b1e79e8-d8d2-4540-83f7-e0ae2a=
+e538d9 -->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- spacer / 06f45918-3689-4b90-9995-368297cca=
+4b5 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"352" align=3D"center" style=3D"margin:auto;clear:both;wid=
+th:352px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                              <tr>
+                                <td height=3D"20" style=3D"height:20px;font=
+-size:20px;line-height:20px" class=3D"m_h10px m_fz10px m_lh10px"> &nbsp; </=
+td>
+                              </tr>
+                            </table>
+                            <!-- EO - spacer - 06f45918-3689-4b90-9995-3682=
+97cca4b5 -->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- text / aadeca1f-f5d4-4575-a6a8-b8ca6992aee=
+9 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"352" align=3D"left" style=3D"width:352px" class=3D"d_left=
+ t_flleft t_w95p m_flnone m_mauto m_w90p" role=3D"presentation">
+                              <tr>
+                                <td style=3D"font-family:Arial,Helvetica,sa=
+ns-serif;color:#13100D;text-align:left;font-size:14px;padding-top:5px;paddi=
+ng-bottom:10px;vertical-align:middle;line-height:22px;padding-right:20px;">=
+Abonn=E9(e) =E0 <span style=3D"font-weight: bold; color: #3ea3dc;">Fnac Vie=
+ Digitale 365 Famille (mensuel)</span>, pour b=E9n=E9ficier des fonctionnal=
+it=E9s de s=E9curit=E9 et de protection de vos donn=E9es les plus performan=
+tes, installez vite vos services !
+                                  <br>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- EO - text - aadeca1f-f5d4-4575-a6a8-b8ca69=
+92aee9 -->
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <!-- cta / 0216218b-fdcd-4646-86aa-455e9c94d970=
+ -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"352" align=3D"left" style=3D"width:352px" class=3D"d_left=
+ t_flleft t_w220px m_flnone m_mauto m_w240px" role=3D"presentation">
+                              <tr>
+                                <td style=3D"padding-top:15px;padding-botto=
+m:30px" class=3D"m_pb15px">
+                                  <!--[if mso]>
+                                  <v:roundrect
+                                    xmlns:v=3D"urn:schemas-microsoft-com:vm=
+l"
+                                    xmlns:w=3D"urn:schemas-microsoft-com:of=
+fice:word"
+                                    href=3D"https://emea01.safelinks.protec=
+tion.outlook.com/?url=3Dhttps%3A%2F%2Fsecure.fnac.com%2Faccount%2Fsubscript=
+ions%2Ffnacviedigitale&amp;data=3D05%7C02%7C%7C72e961eddf084c4440e408dcd2fa=
+6a07%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638617220178134390%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DkMF2z2IvZq1RSSnLr56HnZXO08MV%2BH5tx1G4Mq=
+Zol9w%3D&amp;reserved=3D0" originalSrc=3D"https://secure.fnac.com/account/s=
+ubscriptions/fnacviedigitale" shash=3D"glooZ5xFOEBXpfPwm2Y6zSL5cpnDBm+61TN7=
+CpnAML8/UkmitGXQH7M4gxAiKYl3UtixKChso261PzjokLrZnuE5GhOr/PSU+qoAgmFjBpMgtMI=
+KzzJoCcrxneBhXzLRFo3s+MP6uFqIpIAMKZs4LYdABZ+H0w08SzzJQwQtdiY=3D"
+                                    style=3D"v-text-anchor:middle;height:42=
+px;width:240px"
+                                    arcsize=3D"12%"=20
+                                    stroke=3D"f"
+                                    fillcolor=3D"#3ea3dc"
+                                    fill=3D"t">
+                                    <w:anchorlock/>
+                                    <center style=3D"color:#ffffff;font-siz=
+e:16px;font-family:Arial,Helvetica,sans-serif;height:42px;text-align:center=
+;font-weight:bold;width:240px">
+                                      J'active mes services
+                                    </center>
+                                  </v:roundrect>
+                                  <![endif]-->
+                                  <a style=3D"background-color:#3ea3dc;bord=
+er-radius:5px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-siz=
+e:16px;height:42px;text-align:center;line-height:42px;font-weight:bold;mso-=
+hide:all;display:inline-block;-webkit-text-size-adjust:none;text-decoration=
+:none;width:240px" class=3D"t_fwbold t_fsnormal t_w100p t_bxzborderminbox m=
+_fwbold m_fsnormal m_w100p m_bxzborderminbox" href=3D"https://emea01.safeli=
+nks.protection.outlook.com/?url=3Dhttps%3A%2F%2Ffr.r.emails.fnac.com%2Fr%2F=
+%3Fid%3Dh3678c53f%2Cad09d144%2C446a00b%26e%3DZW1sLXB1Ymxpc2hlcj1OZW9sYW5lJm=
+VtbC1uYW1lPTEzNTgxMDU4MSZPcmlnaW5DbGljaz1ZRVMmT3JpZ2luPW1haWxfNDQ2YTAwYiZjb=
+GllbnRVaWQ9MQ%26s%3DxEW9wdxP9-Vtsrv13JcM5FeNpTUWRKHx8mnM0iFXCuU&amp;data=3D=
+05%7C02%7C%7C72e961eddf084c4440e408dcd2fa6a07%7C84df9e7fe9f640afb435aaaaaaa=
+aaaaa%7C1%7C0%7C638617220178150473%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAw=
+MDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3DkpqO5L%2Bal7ARP2086f%2BM3VadDnvHWebovG3IgzGVsuQ%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://fr.r.emails.fnac.com/r/?id=3Dh3678c53f,ad09d144,446a00b=
+&amp;e=3DZW1sLXB1Ymxpc2hlcj1OZW9sYW5lJmVtbC1uYW1lPTEzNTgxMDU4MSZPcmlnaW5DbG=
+ljaz1ZRVMmT3JpZ2luPW1haWxfNDQ2YTAwYiZjbGllbnRVaWQ9MQ&amp;s=3DxEW9wdxP9-Vtsr=
+v13JcM5FeNpTUWRKHx8mnM0iFXCuU" shash=3D"GKeAUwg9cdV8rqPjcsObYwEOEKJ6NJ0RYj8=
+iKFYV1Ukak2JhW1NdbO1HcLnt58I9X56/nuI5u/znrCkqs5CHvNTd7RN8LijQFlGAgskoHtv0pk=
+H9h65h9OOt+kxRizKa8OnisICk5TDzUbuK+e5FxvKJXR5zLIlr35gGmYQn5s4=3D"> J'instal=
+le mes services </a>
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- EO - cta - 0216218b-fdcd-4646-86aa-455e9c9=
+4d970 -->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / INTRODUCTION -->
+          <!-- SECTION / 1f4b6555-af81-42b6-8b75-6b8626a74889 -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" role=3D"presentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=3D"d_ce=
+nter t_flnone t_mauto t_w100p m_flnone m_mauto m_w100p">
+                  <tr>
+                    <td>
+                      <! -- FIN Top Pav=E9 Toutes offres -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / 1f4b6555-af81-42b6-8b75-6b8626a74889 -->
+          <!-- SECTION / 473de91d-2450-4fed-a66d-5ab67a81bab0 -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" role=3D"presentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=3D"d_ce=
+nter t_flnone t_mauto t_w100p m_flnone m_mauto m_w100p">
+                  <tr>
+                    <td>
+                      <! -- Frise 3 versions -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / 473de91d-2450-4fed-a66d-5ab67a81bab0 -->
+          <!-- SECTION / 69fd2acd-a08a-4d6d-99a9-d65943672416 -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" role=3D"presentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=3D"d_ce=
+nter t_flnone t_mauto t_w100p m_flnone m_mauto m_w100p">
+                  <tr>
+                    <td>
+                      <!--[if !mso]><!-->
+                      <div style=3D"display:none;font-size:1px;color:#00000=
+0;line-height:1px;max-height:
+                        0px;max-width:0px;overflow:hidden;mso-hide:all;" cl=
+ass=3D"m_v t_v"></div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / 69fd2acd-a08a-4d6d-99a9-d65943672416 -->
+          <!-- SECTION / 0f6391e1-4b5a-4493-9350-e87574191982 -->
+          <!--<![endif]-->
+          <!-- EO - SECTION / 0f6391e1-4b5a-4493-9350-e87574191982 -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" class=3D"" role=3D"pre=
+sentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=3D"d_ce=
+nter t_flnone t_mauto t_w100p m_flnone m_mauto m_w100p">
+                  <tr>
+                    <td style=3D"">
+                      <!-- image / 2239ca98-6678-4893-ad5b-07366fbb563f -->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=
+=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w90p" role=3D"pres=
+entation">
+                        <tr>
+                          <td>
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"100%" align=3D"center" style=3D"" class=3D"d_center t_w10=
+0p m_w100p" role=3D"presentation">
+                              <tr>
+                                <td style=3D"background-color:#ffffff;paddi=
+ng-top:20px;padding-bottom:20px;text-align:center">
+                                  <img src=3D"https://static.fnac-static.co=
+m/multimedia/Mails/2023/AUTO/FnacVieDigitale/frise-step1-mobile.png" alt=3D=
+"" width=3D"608" style=3D"font-family:Arial,Helvetica,sans-serif;font-size:=
+13px;color:#000000;line-height:13px;display:block;border:none" class=3D"t_w=
+100p m_w90p">
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- EO - image - 2239ca98-6678-4893-ad5b-07366fbb563=
+f -->
+                      </div>
+                      <!--<![endif]-->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / 0f6391e1-4b5a-4493-9350-e87574191982 -->
+          <!-- SECTION / 7dc423c7-a830-4a0a-a95b-a1eb94e9798c -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" class=3D"" role=3D"pre=
+sentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=3D"d_ce=
+nter t_flnone t_mauto t_w100p m_flnone m_mauto m_w100p">
+                  <tr>
+                    <td style=3D"">
+                      <!-- spacer / ecfd0e87-21e7-4725-8065-f3bc5abe0861 --=
+>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;clear:both;width:608=
+px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                        <tr>
+                          <td height=3D"30" style=3D"height:30px;font-size:=
+30px;line-height:30px" class=3D""> &nbsp; </td>
+                        </tr>
+                      </table>
+                      <!-- EO - spacer - ecfd0e87-21e7-4725-8065-f3bc5abe08=
+61 -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / 7dc423c7-a830-4a0a-a95b-a1eb94e9798c -->
+          <!-- SECTION / 43a87951-497b-4866-9c8a-145329b2de84 -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" class=3D"" role=3D"pre=
+sentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=3D"d_ce=
+nter t_flnone t_mauto t_w100p m_flnone m_mauto m_w100p">
+                  <tr>
+                    <td style=3D"">
+                      <! -- 3 steps relance 1 -->
+                      <!-- text / fc5dc16f-dd42-4262-ad3a-65a471e5b318 -->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=
+=3D"d_center t_flnone t_mauto t_w78p m_flnone m_mauto m_w90p" role=3D"prese=
+ntation">
+                        <tr>
+                          <td style=3D"font-family:Arial,Helvetica,sans-ser=
+if;color:#3ea3dc;text-align:center;font-size:25px;padding-bottom:10px;verti=
+cal-align:middle;font-weight:bold" class=3D"t_fz20px m_fz20px"> VOS =C9TAPE=
+S D'INSTALLATION </td>
+                        </tr>
+                      </table>
+                      <!-- EO - text - fc5dc16f-dd42-4262-ad3a-65a471e5b318=
+ -->
+                      <!-- spacer / 2a1fd129-574e-42a5-bbc3-2564b6d2bd31 --=
+>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;clear:both;width:608=
+px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                        <tr>
+                          <td height=3D"20" style=3D"height:20px;font-size:=
+20px;line-height:20px" class=3D""> &nbsp; </td>
+                        </tr>
+                      </table>
+                      <!-- EO - spacer - 2a1fd129-574e-42a5-bbc3-2564b6d2bd=
+31 -->
+                      <!-- WRAPPER / 37eb51eb-41cc-4936-bdfb-6363fc3e986e -=
+->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=
+=3D"d_center t_flnone t_mauto t_w95p m_flnone m_mauto m_w100p">
+                        <tr>
+                          <td style=3D"">
+                            <!-- COLUMN / 44674a24-6d03-4cbf-a3d1-488ff89fe=
+4d5 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"407" align=3D"left" style=3D"width:407px" class=3D"d_left=
+ t_w57p t_flleft m_w100p m_flright" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <!-- WRAPPER / 630b9a7c-ca5a-4924-a648-a3=
+5211ec53b0 -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"407" align=3D"center" style=3D"margin:auto;backgrou=
+nd-color:#ffffff;width:407px" class=3D"d_center t_flnone t_mauto t_w100p m_=
+flnone m_mauto m_w90p">
+                                    <tr>
+                                      <td style=3D"height:441px" height=3D"=
+441px" class=3D"t_h430px m_h250px">
+                                        <!-- WRAPPER / a753f73d-de9d-43b8-a=
+df6-b72494e2c55f -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"366" align=3D"center" style=3D"margin:auto;wi=
+dth:366px" class=3D"d_center t_flnone t_mauto t_w90p m_flnone m_mauto m_w90=
+p">
+                                          <tr>
+                                            <td style=3D"">
+                                              <!-- text / cc4fa208-b1ab-4ad=
+0-9c28-c12a6388d66f -->
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"366" align=3D"center" style=3D"margin:a=
+uto;width:366px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_maut=
+o m_w100p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"font-family:=
+Arial,Helvetica,sans-serif;color:#13100D;text-align:left;text-transform:upp=
+ercase;font-size:16px;padding-top:21px;padding-bottom:10px;vertical-align:m=
+iddle;line-height:24px;font-weight:bold" class=3D"t_pt10px m_fz14px"> ON FA=
+IT LE POINT&nbsp;! </td>
+                                                </tr>
+                                              </table>
+                                              <!-- EO - text - cc4fa208-b1a=
+b-4ad0-9c28-c12a6388d66f -->
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - WRAPPER / a753f73d-de9d-4=
+3b8-adf6-b72494e2c55f -->
+                                        <!-- text / b1b3d582-66db-4d13-81a1=
+-f00231a6a412 -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"366" align=3D"center" style=3D"margin:auto;wi=
+dth:366px" class=3D"d_center t_flnone t_mauto t_w90p m_flnone m_mauto m_w90=
+p" role=3D"presentation">
+                                          <tr>
+                                            <td style=3D"font-family:Arial,=
+Helvetica,sans-serif;color:#13100D;text-align:left;text-transform:none;font=
+-size:14px;padding-top:10px;padding-bottom:10px;vertical-align:middle;line-=
+height:22px" class=3D"t_lh18px m_fz13px m_lh18px">Vous avez souscit =E0 un =
+abonnement <span style=3D"font-weight: bold; color: #3ea3dc;">Fnac Vie Digi=
+tale 365 Famille (mensuel)</span> et il ne vous reste plus qu'=E0 installer=
+ vos services depuis votre Espace client.
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - text - b1b3d582-66db-4d13=
+-81a1-f00231a6a412 -->
+                                        <!-- image / bb6bfa58-215b-44b6-a7c=
+a-ba665b77ec7a -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"284" align=3D"center" style=3D"margin:auto;wi=
+dth:284px" class=3D"d_center t_flnone t_mauto t_w89p m_flnone m_mauto m_w70=
+p" role=3D"presentation">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"" class=
+=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"padding-top:=
+20px;text-align:center" class=3D"t_pt55px t_pb1px">
+                                                    <img src=3D"https://sta=
+tic.fnac-static.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/personnage-f=
+nac-digitale-04-2023-500x500.png" alt=3D"" width=3D"284" style=3D"font-fami=
+ly:Arial,Helvetica,sans-serif;font-size:13px;color:#000000;line-height:13px=
+;display:block;border:none" class=3D"t_w100p m_w100p">
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - image - bb6bfa58-215b-44b=
+6-a7ca-ba665b77ec7a -->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - WRAPPER / 630b9a7c-ca5a-4924-a6=
+48-a35211ec53b0 -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- spacer / 013f5ac2-daaa-4293-853f-dc0=
+f7037884f -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"407" align=3D"center" style=3D"margin:auto;clear:bo=
+th;width:407px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                                    <tr>
+                                      <td height=3D"20" style=3D"height:20p=
+x;font-size:20px;line-height:20px" class=3D""> &nbsp; </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - spacer - 013f5ac2-daaa-4293-853=
+f-dc0f7037884f -->
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <!-- COLUMN / 29f84363-7d52-43f2-8f88-714de73a5=
+3e2 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"18" align=3D"left" style=3D"width:18px" class=3D"d_left t=
+_w2p t_flleft m_w0p m_dnone m_flright" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <span>&nbsp;</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <!-- COLUMN / 0b6127da-881a-440c-80e4-bf68bcea4=
+502 -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"183" align=3D"right" style=3D"width:183px" class=3D"d_rig=
+ht t_w41p t_flright m_w100p m_flright" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <!-- WRAPPER / ba91020c-1b44-4134-9fba-e9=
+7e01742193 -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"183" align=3D"center" style=3D"margin:auto;backgrou=
+nd-color:#ffffff;width:183px" class=3D"d_center t_flleft t_w95p m_flnone m_=
+mauto m_bgcffffff m_w90p">
+                                    <tr>
+                                      <td class=3D"t_h135px m_h100px">
+                                        <!-- image / 27391725-246b-4715-83a=
+e-eb634de8c00a -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"36" align=3D"center" style=3D"margin:auto;wid=
+th:36px" class=3D"d_center t_flnone t_mauto t_w30p m_flnone m_mauto m_w12p"=
+ role=3D"presentation">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"" class=
+=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"text-align:c=
+enter">
+                                                    <img src=3D"https://sta=
+tic.fnac-static.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/pictos-mail-=
+04-2023-300x300-picto1.png" alt=3D"" width=3D"36" style=3D"font-family:Aria=
+l,Helvetica,sans-serif;font-size:13px;color:#000000;line-height:13px;displa=
+y:block;border:none" class=3D"t_w100p m_w100p">
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - image - 27391725-246b-471=
+5-83ae-eb634de8c00a -->
+                                        <!-- text / abf50268-c7c4-4756-9467=
+-a2943abf19c0 -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"155" align=3D"center" style=3D"margin:auto;wi=
+dth:155px" class=3D"d_center t_flnone t_mauto t_w90p m_flnone m_mauto m_w90=
+p" role=3D"presentation">
+                                          <tr>
+                                            <td style=3D"font-family:Arial,=
+Helvetica,sans-serif;color:#13100D;text-align:center;font-size:14px;padding=
+-top:10px;padding-right:10px;vertical-align:middle;line-height:22px" class=
+=3D"t_fz13px t_pr5px t_pl5px t_lh18px m_fz13px m_lh18px"> Je me connecte =
+=E0 mon Espace client. </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - text - abf50268-c7c4-4756=
+-9467-a2943abf19c0 -->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - WRAPPER / ba91020c-1b44-4134-9f=
+ba-e97e01742193 -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- spacer / ca141e5d-4649-40f8-8c8f-f80=
+ab5b3a1b8 -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"183" align=3D"center" style=3D"margin:auto;clear:bo=
+th;width:183px;background-color:#f5f5f5;" class=3D"d_center t_w100p m_w100p=
+" role=3D"presentation">
+                                    <tr>
+                                      <td height=3D"20" style=3D"height:20p=
+x;font-size:20px;line-height:20px" class=3D"t_h11px t_fz11px t_lh11px"> &nb=
+sp; </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - spacer - ca141e5d-4649-40f8-8c8=
+f-f80ab5b3a1b8 -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- WRAPPER / a4fbbdf7-f28a-4ebc-b22d-42=
+dd5ed44132 -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"183" align=3D"center" style=3D"margin:auto;backgrou=
+nd-color:#ffffff;width:183px" class=3D"d_center t_flleft t_w95p m_flnone m_=
+mauto m_bgcffffff m_w90p">
+                                    <tr>
+                                      <td class=3D"t_h135px m_h100px">
+                                        <!-- image / 8ab4e1ec-2613-4a2a-888=
+a-ab7f34a0f60a -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"36" align=3D"center" style=3D"margin:auto;wid=
+th:36px" class=3D"d_center t_flnone t_mauto t_w30p m_flnone m_mauto m_w12p"=
+ role=3D"presentation">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"" class=
+=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"text-align:c=
+enter">
+                                                    <img src=3D"https://sta=
+tic.fnac-static.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/pictos-mail-=
+04-2023-300x300-picto2.png" alt=3D"" width=3D"36" style=3D"font-family:Aria=
+l,Helvetica,sans-serif;font-size:13px;color:#000000;line-height:13px;displa=
+y:block;border:none" class=3D"t_w100p m_w100p">
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - image - 8ab4e1ec-2613-4a2=
+a-888a-ab7f34a0f60a -->
+                                        <!-- text / 8b944cd0-26b7-489f-b7a6=
+-cb61048cf198 -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"155" align=3D"center" style=3D"margin:auto;wi=
+dth:155px" class=3D"d_center t_flnone t_mauto t_w90p m_flnone m_mauto m_w90=
+p" role=3D"presentation">
+                                          <tr>
+                                            <td style=3D"font-family:Arial,=
+Helvetica,sans-serif;color:#13100D;text-align:center;font-size:14px;padding=
+-top:10px;padding-right:10px;vertical-align:middle;line-height:22px" class=
+=3D"t_fz13px t_pr5px t_pl5px t_lh18px m_fz13px m_lh18px"> J=92ouvre l=92ong=
+let<br><span style=3D"font-style: italic">Fid=E9lit=E9 / Abonnements.</span=
+>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - text - 8b944cd0-26b7-489f=
+-b7a6-cb61048cf198 -->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - WRAPPER / a4fbbdf7-f28a-4ebc-b2=
+2d-42dd5ed44132 -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- spacer / 479339ff-7d45-4f48-8883-115=
+388f2c442 -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"183" align=3D"center" style=3D"margin:auto;clear:bo=
+th;width:183px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                                    <tr>
+                                      <td height=3D"20" style=3D"height:20p=
+x;font-size:20px;line-height:20px" class=3D"t_h11px t_fz11px t_lh11px"> &nb=
+sp; </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - spacer - 479339ff-7d45-4f48-888=
+3-115388f2c442 -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- WRAPPER / 481c2869-b85d-44c6-ba73-83=
+d055f35c47 -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"183" align=3D"center" style=3D"margin:auto;backgrou=
+nd-color:#ffffff;width:183px" class=3D"d_center t_flleft t_w95p m_flnone m_=
+mauto m_w90p">
+                                    <tr>
+                                      <td class=3D"t_h135px m_h100px">
+                                        <!-- image / f0fdfd6a-8671-4d4b-903=
+3-1aa90e4d5344 -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"36" align=3D"center" style=3D"margin:auto;wid=
+th:36px" class=3D"d_center t_flnone t_mauto t_w30p m_flnone m_mauto m_w12p"=
+ role=3D"presentation">
+                                          <tr>
+                                            <td>
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" style=3D"" class=
+=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"text-align:c=
+enter">
+                                                    <img src=3D"https://sta=
+tic.fnac-static.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/pictos-mail-=
+04-2023-300x300-picto3.png" alt=3D"" width=3D"36" style=3D"font-family:Aria=
+l,Helvetica,sans-serif;font-size:13px;color:#000000;line-height:13px;displa=
+y:block;border:none" class=3D"t_w100p m_w100p">
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - image - f0fdfd6a-8671-4d4=
+b-9033-1aa90e4d5344 -->
+                                        <!-- text / 94ce2f19-f345-4b45-b267=
+-c57f45698aec -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"155" align=3D"center" style=3D"margin:auto;wi=
+dth:155px" class=3D"d_center t_flnone t_mauto t_w90p m_flnone m_mauto m_w90=
+p" role=3D"presentation">
+                                          <tr>
+                                            <td style=3D"font-family:Arial,=
+Helvetica,sans-serif;color:#13100D;text-align:center;font-size:14px;padding=
+-top:10px;padding-right:10px;vertical-align:middle;line-height:22px" class=
+=3D"t_fz13px t_pr5px t_pl5px t_lh18px m_fz13px m_lh18px"> J'installe mes se=
+rvices&nbsp;! </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - text - 94ce2f19-f345-4b45=
+-b267-c57f45698aec -->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - WRAPPER / 481c2869-b85d-44c6-ba=
+73-83d055f35c47 -->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- EO - WRAPPER / 37eb51eb-41cc-4936-bdfb-6363fc3e9=
+86e -->
+                      <!-- WRAPPER / 4fa60f6a-3d7a-4d3f-ab9d-4a71e0073938 -=
+->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=
+=3D"d_center t_flleft t_w100p m_flnone m_mauto m_w100p">
+                        <tr>
+                          <td style=3D"">
+                            <!-- WRAPPER / 10cef6ad-c98a-421c-a6e0-c5f09bf2=
+de2d -->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px" c=
+lass=3D"d_center t_flnone t_mauto t_w95p m_flnone m_center m_w90p">
+                              <tr>
+                                <td style=3D"height:100px" height=3D"100px"=
+ class=3D"m_h120px">
+                                  <!-- WRAPPER / a2f7fb0c-171c-4039-bca8-de=
+2cccaabe7c -->
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"608" align=3D"center" style=3D"margin:auto;backgrou=
+nd-color:#f5f5f5;width:608px" class=3D"d_center t_flnone t_mauto t_w268px m=
+_center m_w90p">
+                                    <tr>
+                                      <td style=3D"height:100px" height=3D"=
+100px" class=3D"m_h120px">
+                                        <!-- text / 4158edc9-d941-4d45-85d2=
+-75115d6b0221 -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"547" align=3D"center" style=3D"margin:auto;wi=
+dth:547px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p" role=3D"presentation">
+                                          <tr>
+                                            <td style=3D"font-family:Arial,=
+Helvetica,sans-serif;color:#000000;text-align:center;font-size:16px;padding=
+-top:37px;padding-bottom:10px;vertical-align:middle;font-weight:bold" class=
+=3D"t_fz14px m_fz13px m_pt20px m_pb5px"> C'EST FACILE, J'Y VAIS&nbsp;! </td=
+>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - text - 4158edc9-d941-4d45=
+-85d2-75115d6b0221 -->
+                                        <!-- cta / 0560d583-713c-48b6-a222-=
+3bd3e2b8e805 -->
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"486" align=3D"center" style=3D"margin:auto;wi=
+dth:486px" class=3D"d_center t_flnone t_mauto t_w80p m_w100p m_center" role=
+=3D"presentation">
+                                          <tr>
+                                            <td style=3D"padding-top:10px;p=
+adding-bottom:10px" class=3D"m_pb5px t_tacenter">
+                                              <!--[if mso]>
+                                              <v:roundrect
+                                                xmlns:v=3D"urn:schemas-micr=
+osoft-com:vml"
+                                                xmlns:w=3D"urn:schemas-micr=
+osoft-com:office:word"
+                                                href=3D"https://emea01.safe=
+links.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsecure.fnac.com%2Faccount=
+%2Fsubscriptions%2Ffnacviedigitale&amp;data=3D05%7C02%7C%7C72e961eddf084c44=
+40e408dcd2fa6a07%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C6386172201781=
+64161%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6I=
+k1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DoXh%2BSafZXgy7IKSgt3ifs1P2oD=
+xhcmEiJOpJpkbR2lw%3D&amp;reserved=3D0" originalSrc=3D"https://secure.fnac.c=
+om/account/subscriptions/fnacviedigitale" shash=3D"mK4stsq/s2YnzgBOaZWtcajj=
+7t/eKzoK+sCzcXuBzRKQishOlSr69n/LtP7Q7Iv6xFU03/hVH0bVh0Cg/fr2wVR/nMyDfpDwcFl=
+YBM5SxFYkRel/tNHiKv+3lvDvgxty/ivHbW6ddeNTtLc1UXOlt165/tJF5q74RgHttPHIB0E=3D=
+"
+                                                style=3D"v-text-anchor:midd=
+le;height:40px;width:486px"
+                                                arcsize=3D"8%"=20
+                                                stroke=3D"f"
+                                                fillcolor=3D"#3ea3dc"
+                                                fill=3D"t">
+                                                <w:anchorlock/>
+                                                <center style=3D"color:#fff=
+fff;font-size:16px;font-family:Arial,Helvetica,sans-serif;height:40px;text-=
+align:center;font-weight:bold;width:486px">
+                                                  Mon espace client
+                                                </center>
+                                              </v:roundrect>
+                                              <![endif]-->
+                                              <a style=3D"background-color:=
+#3ea3dc;border-radius:3px;color:#ffffff;font-family:Arial,Helvetica,sans-se=
+rif;font-size:16px;height:40px;text-align:center;line-height:40px;font-weig=
+ht:bold;mso-hide:all;display:inline-block;-webkit-text-size-adjust:none;tex=
+t-decoration:none;width:486px" class=3D"t_fwbold t_fsnormal t_w100p t_bxzbo=
+rderminbox m_fz18px m_fwbold m_fsnormal m_w100p m_bxzborderminbox" href=3D"=
+https://emea01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fsecure=
+.fnac.com%2Faccount%2Fsubscriptions%2Ffnacviedigitale&amp;data=3D05%7C02%7C=
+%7C72e961eddf084c4440e408dcd2fa6a07%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%=
+7C0%7C638617220178176321%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIj=
+oiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DwvXaku%2B=
+yor0woOGaqWAxP88%2Bij3ZC7UiDM654UTTTEQ%3D&amp;reserved=3D0" originalsrc=3D"=
+https://secure.fnac.com/account/subscriptions/fnacviedigitale" shash=3D"emd=
+9G3T/SCzrJ6wmKjBtPH/m8c2SbVBz2pQQRp7Fe6mvDeLutyj7WgBifjcE+CLOoS9UC4rQeGtvAC=
+lQYsY2hFsOCAGO81nZL2MCz/wFN2Y7SNngMoUBvGpiiqtH99uNlfEo/1ToOLPyAxu3KvMbxN1um=
+xFAcJLAcnN2+iW0PYw=3D"> Mon espace client </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- EO - cta - 0560d583-713c-48b6-=
+a222-3bd3e2b8e805 -->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- EO - WRAPPER / a2f7fb0c-171c-4039-bc=
+a8-de2cccaabe7c -->
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- EO - WRAPPER / 10cef6ad-c98a-421c-a6e0-c5f=
+09bf2de2d -->
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- EO - WRAPPER / 4fa60f6a-3d7a-4d3f-ab9d-4a71e0073=
+938 -->
+                      <! -- FIN 3 steps relance 1 -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / 43a87951-497b-4866-9c8a-145329b2de84 -->
+          <!-- SECTION / ee1b9f2b-cd1a-43a1-a456-d162b858f034 -->
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"=
+100%" style=3D"width:100%; background-color:#f5f5f5" role=3D"presentation">
+            <tr>
+              <td style=3D"background-color:#f5f5f5">
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;clear:both;width:608px" cl=
+ass=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                  <tr>
+                    <td height=3D"20" style=3D"height:20px;font-size:20px;l=
+ine-height:20px"> &nbsp; </td>
+                  </tr>
+                </table>
+                <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" wid=
+th=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=3D"d_ce=
+nter t_flnone t_mauto t_w100p m_flnone m_mauto m_w100p">
+                  <tr>
+                    <td>
+                      <! -- Aide 3 versions -->
+                      <!-- WRAPPER / fa977762-06f3-431f-871b-20d50e15d929 -=
+->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px;backgrou=
+nd-color:#ffffff;border-bottom:8px solid #3ea3dc;" class=3D"d_center t_flno=
+ne t_mauto t_w100p m_flnone m_mauto m_w90p">
+                        <tr>
+                          <td style=3D"vertical-align:top; padding:25px 20p=
+x 0 55px; width: 50px;" width=3D"50px" class=3D"m_pl20px m_wInitial">
+                            <a href=3D"https://emea01.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fsecure.fnac.com%2Faccount%2Fsubscriptions%=
+2Ffnacviedigitale&amp;data=3D05%7C02%7C%7C72e961eddf084c4440e408dcd2fa6a07%=
+7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638617220178185989%7CUnknown%7=
+CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn=
+0%3D%7C0%7C%7C%7C&amp;sdata=3Di%2FZzofiuV76Nu2khOh%2BMIIaW9giLjsHACCSMoMfwh=
+ts%3D&amp;reserved=3D0" originalsrc=3D"https://secure.fnac.com/account/subs=
+criptions/fnacviedigitale" shash=3D"Eowg1dO9kMRJzpxT2H8FQtpIrEwblBZ6EEFqFyT=
+cndP90gmFAw5HJgD2rEgfxvBqEBnSrSZj7tnVk6QQdbI4BvIOZTvm9QApsNAV6kKybyCcTXNEEm=
+FopZsBZd4FEqBJYEZ7YQm1uwiAlAWOP2V94tnweOmAyIRgBARPj4wy1E4=3D" width=3D"36" =
+style=3D"color:#000000;outline:none;border:none;margin:auto;display:block" =
+class=3D"t_w100p m_w100p">
+                            <img src=3D"https://static.fnac-static.com/mult=
+imedia/Mails/2023/AUTO/FnacVieDigitale/pictos-mail-04-2023-300x300-compte.p=
+ng" alt=3D"&gt;" width=3D"36" style=3D"font-family:Arial,Helvetica,sans-ser=
+if;font-size:13px;line-height:13px;display:block;border:none" class=3D"t_w1=
+00p">
+                            </a>
+                          </td>
+                          <td style=3D"font-family:Arial,Helvetica,sans-ser=
+if;color:#13100D;text-align:left;font-size:14px;padding:25px 50px 25px 0;ve=
+rtical-align:middle" class=3D"t_pt15px t_lh18px m_fz13px m_pr20px">
+                            <a href=3D"https://emea01.safelinks.protection.=
+outlook.com/?url=3Dhttps%3A%2F%2Fsecure.fnac.com%2Faccount%2Fsubscriptions%=
+2Ffnacviedigitale&amp;data=3D05%7C02%7C%7C72e961eddf084c4440e408dcd2fa6a07%=
+7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638617220178196579%7CUnknown%7=
+CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn=
+0%3D%7C0%7C%7C%7C&amp;sdata=3D6G25XwZNDboCZkAJ02%2FNkOjUbBezgPEz3ZGP2LgcRNw=
+%3D&amp;reserved=3D0" originalsrc=3D"https://secure.fnac.com/account/subscr=
+iptions/fnacviedigitale" shash=3D"UJkqXo6LMsvivXac9abGzaG6vUwRywynL76GA28hU=
+zu3Pz4G7yzArbQWOwvRs1b7U+Yik1WBoMHFV/b/uDgEMaZF89j6uu7PL9XOk304OcrL+6gG8Ak6=
+Z/uFkx6mEGwi4JTjc/gRbtsOAkdS5tAYyHQ0oAuUfIU8iowmrDBdKrc=3D" style=3D"color:=
+#13100D;display:block;text-decoration:none;outline:none" class=3D"t_lh18px =
+m_lh18px">
+                            <span style=3D"font-weight: bold">G=E9rez votre=
+ abonnement en ligne</span><br><br>Connectez-vous =E0 votre <span style=3D"=
+text-decoration: underline">espace client</span> et retrouvez la gestion de=
+ vos donn=E9es personnelles, vos factures, votre moyen de paiement et les C=
+GS de votre abonnement. </a>
+                          </td>
+                        </tr>
+                      </table>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;clear:both;width:608=
+px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                        <tr>
+                          <td height=3D"20" style=3D"height:20px;font-size:=
+20px;line-height:20px"> &nbsp; </td>
+                        </tr>
+                      </table>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px;backgrou=
+nd-color:#ffffff;border-bottom:8px solid #3ea3dc;" class=3D"d_center t_flno=
+ne t_mauto t_w100p m_flnone m_mauto m_w90p">
+                        <tr>
+                          <td style=3D"vertical-align:top; padding:25px 20p=
+x 0 55px; width: 50px;" width=3D"50px" class=3D"m_pl20px m_wInitial">
+                            <img src=3D"https://static.fnac-static.com/mult=
+imedia/Mails/2023/AUTO/FnacVieDigitale/pictos-mail-04-2023-300x300-telephon=
+e.png" alt=3D"&gt;" width=3D"36" style=3D"font-family:Arial,Helvetica,sans-=
+serif;font-size:13px;line-height:13px;display:block;border:none" class=3D"t=
+_w100p">
+                          </td>
+                          <td style=3D"font-family:Arial,Helvetica,sans-ser=
+if;color:#13100D;text-align:left;font-size:14px;padding:25px 50px 25px 0;ve=
+rtical-align:middle" class=3D"t_pt15px t_lh18px m_fz13px m_pr20px">
+                            <span style=3D"font-weight: bold">Besoin d=92as=
+sistance par t=E9l=E9phone&nbsp;?</span><br><br>Nos conseillers sont dispon=
+ibles au <span style=3D"font-weight: bold">098&nbsp;098&nbsp;30&nbsp;10</sp=
+an>&nbsp;<br class=3D"resp-hide">(co=FBt d=92un appel local), 7 jours sur 7=
+, de 8h =E0 22h.<br>
+                          </td>
+                        </tr>
+                      </table>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;clear:both;width:608=
+px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                        <tr>
+                          <td height=3D"20" style=3D"height:20px;font-size:=
+20px;line-height:20px"> &nbsp; </td>
+                        </tr>
+                      </table>
+                     =20
+                     =20
+                      <!-- Fnac Vie Digitale optn Microsoft -->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px" class=
+=3D"d_center t_flnone t_mauto t_w95p m_flnone m_mauto m_w90p">
+                        <tr>
+                          <td style=3D"height:200px" height=3D"200px">
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"146" align=3D"left" style=3D"width:146px" class=3D"d_left=
+ t_w48p t_flleft m_w48p m_flleft" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"146" align=3D"left" style=3D"background-color:#ffff=
+ff;width:146px" class=3D"d_left t_flleft t_w100p m_flleft m_w100p">
+                                    <tr>
+                                      <td style=3D"height:200px" height=3D"=
+200px">
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:80px" heigh=
+t=3D"80px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"43" align=3D"center" style=3D"margin:au=
+to;width:43px" class=3D"d_center t_flnone t_mauto t_w25p m_flnone m_mauto m=
+_w30p" role=3D"presentation">
+                                                <tr>
+                                                  <td>
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" class=3D"d=
+_center t_w100p m_w100p" role=3D"presentation">
+                                                      <tr>
+                                                        <td style=3D"text-a=
+lign:center">
+                                                          <img src=3D"https=
+://static.fnac-static.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/protec=
+tion-orange.png" alt=3D"" width=3D"43" style=3D"font-family:Arial,Helvetica=
+,sans-serif;font-size:13px;color:#000000;line-height:13px;display:block;bor=
+der:none" class=3D"t_w100p m_w100p">
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:132px" heig=
+ht=3D"132px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"131" align=3D"center" style=3D"margin:a=
+uto;width:131px" class=3D"d_center t_flnone t_mauto t_w90p m_flnone m_mauto=
+ m_w95p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"font-family:=
+Helvetica,Arial,sans-serif;font-weight:400;color:#000000;text-align:center;=
+font-size:13px;
+                                                    height:86px;padding-bot=
+tom:15px;vertical-align:middle;line-height:19px" class=3D"opensans" height=
+=3D"86">
+                                                    <span style=3D"font-wei=
+ght:700">MA PROTECTION</span><br>Votre solution compl=E8te pour s=E9curiser=
+ toute votre vie digitale
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"8" align=3D"left" style=3D"width:8px" class=3D"d_left t_w=
+4p t_flleft m_w4p m_flleft" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <span>&nbsp;</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"146" align=3D"left" style=3D"width:146px" class=3D"d_left=
+ t_w48p t_flright m_w48p m_flright" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"146" align=3D"left" style=3D"background-color:#ffff=
+ff;width:146px" class=3D"d_left t_flleft t_w100p m_flleft m_w100p">
+                                    <tr>
+                                      <td style=3D"height:212px" height=3D"=
+212px">
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:80px" heigh=
+t=3D"80px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"46" align=3D"center" style=3D"margin:au=
+to;width:46px" class=3D"d_center t_flnone t_mauto t_w25p m_flnone m_mauto m=
+_w30p" role=3D"presentation">
+                                                <tr>
+                                                  <td>
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" class=3D"d=
+_center t_w100p m_w100p" role=3D"presentation">
+                                                      <tr>
+                                                        <td style=3D"paddin=
+g-top:0;padding-bottom:20px;text-align:center">
+                                                          <img src=3D"https=
+://static.fnac-static.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/labofn=
+ac-v2.png" alt=3D"" width=3D"46" style=3D"font-family:Arial,Helvetica,sans-=
+serif;font-size:13px;color:#000000;line-height:13px;display:block;border:no=
+ne" class=3D"t_w100p m_w100p">
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:110px" heig=
+ht=3D"110px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"131" align=3D"center" style=3D"margin:a=
+uto;width:131px" class=3D"d_center t_flnone t_mauto t_w95p m_flnone m_mauto=
+ m_w95p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"font-family:=
+Helvetica,Arial,sans-serif;font-weight:400;color:#000000;text-align:center;=
+font-size:13px;
+                                                    padding-top:0;padding-b=
+ottom:15px;vertical-align:middle;line-height:19px" class=3D"opensans">
+                                                    <span style=3D"font-wei=
+ght:700">EXPERTISE LABOFNAC</span><br>Nos experts =E0 votre =E9coute
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"8" align=3D"left" style=3D"width:8px" class=3D"d_left t_w=
+100p t_flright m_w100p m_flright" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <span>&nbsp;</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"146" align=3D"left" style=3D"width:146px" class=3D"d_left=
+ t_w48p t_flleft m_w48p m_flleft" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"146" align=3D"left" style=3D"background-color:#ffff=
+ff;width:146px" class=3D"d_left t_flleft t_w100p m_flleft m_w100p">
+                                    <tr>
+                                      <td style=3D"height:200px" height=3D"=
+200px">
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:80px" heigh=
+t=3D"80px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"43" align=3D"center" style=3D"margin:au=
+to;width:43px" class=3D"d_center t_flnone t_mauto t_w22p m_flnone m_mauto m=
+_w25p" role=3D"presentation">
+                                                <tr>
+                                                  <td>
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" class=3D"d=
+_center t_w100p m_w100p" role=3D"presentation">
+                                                      <tr>
+                                                        <td style=3D"text-a=
+lign:center">
+                                                          <img src=3D"https=
+://static.fnac-static.com/multimedia/Mails/2023/AUTO/FnacVieDigitale/micros=
+oft_carre.png" alt=3D"" width=3D"43" style=3D"font-family:Arial,Helvetica,s=
+ans-serif;font-size:13px;color:#000000;line-height:13px;display:block;borde=
+r:none" class=3D"t_w100p m_w100p">
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:132px" heig=
+ht=3D"132px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"131" align=3D"center" style=3D"margin:a=
+uto;width:131px" class=3D"d_center t_flnone t_mauto t_w95p m_flnone m_mauto=
+ m_w95p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"font-family:=
+Helvetica,Arial,sans-serif;font-weight:400;color:#000000;text-align:center;=
+font-size:13px;
+                                                    padding-bottom:15px;ver=
+tical-align:middle;line-height:19px" class=3D"opensans">
+                                                    <span style=3D"font-wei=
+ght:700;font-size:inherit">MICROSOFT 365</span><br><span style=3D"font-size=
+:inherit">Votre suite applicative pour acc=E9l=E9rer votre productivit=E9 q=
+uotidienne</span>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"8" align=3D"left" style=3D"width:8px" class=3D"d_left t_w=
+4p t_flleft m_w4p m_flleft" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <span>&nbsp;</span>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if gte mso 9]>=20
+                          </td>
+                          <td style=3D"vertical-align:top;border-collapse:c=
+ollapse">
+                            <![endif]-->
+                            <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"146" align=3D"right" style=3D"width:146px" class=3D"d_rig=
+ht t_w48p t_flright m_w48p m_flright" role=3D"presentation">
+                              <tr>
+                                <td>
+                                  <table cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"146" align=3D"left" style=3D"background-color:#ffff=
+ff;width:146px" class=3D"d_left t_flleft t_w100p m_flleft m_w100p">
+                                    <tr>
+                                      <td style=3D"height:212px" height=3D"=
+212px">
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:80px" heigh=
+t=3D"80px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"65" align=3D"center" style=3D"margin:au=
+to;width:65px" class=3D"d_center t_flnone t_mauto t_w35p m_flnone m_mauto m=
+_w45p" role=3D"presentation">
+                                                <tr>
+                                                  <td>
+                                                    <table cellpadding=3D"0=
+" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"center" class=3D"d=
+_center t_w100p m_w100p" role=3D"presentation">
+                                                      <tr>
+                                                        <td style=3D"text-a=
+lign:center">
+                                                          <img src=3D"https=
+://static.fnac-static.com/multimedia/Mails/2022/AUTO/FNAC_ET_MOI/CONFIRMATI=
+ON_ACTIVATION_FNACPLUS/carte-fnac.png" alt=3D"" width=3D"65" style=3D"font-=
+family:Arial,Helvetica,sans-serif;font-size:13px;color:#000000;line-height:=
+13px;display:block;border:none" class=3D"t_w100p m_w100p">
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <table cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" width=3D"146" align=3D"center" style=3D"margin:auto;wi=
+dth:146px" class=3D"d_center t_flnone t_mauto t_w100p m_flnone m_mauto m_w1=
+00p">
+                                          <tr>
+                                            <td style=3D"height:132px" heig=
+ht=3D"132px">
+                                              <table cellpadding=3D"0" cell=
+spacing=3D"0" border=3D"0" width=3D"131" align=3D"center" style=3D"margin:a=
+uto;width:131px" class=3D"d_center t_flnone t_mauto t_w95p m_flnone m_mauto=
+ m_w95p" role=3D"presentation">
+                                                <tr>
+                                                  <td style=3D"font-family:=
+Helvetica,Arial,sans-serif;font-weight:400;color:#000000;text-align:center;=
+font-size:13px;
+                                                    padding-bottom:55px;ver=
+tical-align:middle;line-height:19px" class=3D"m_pb45px opensans">
+                                                    <span style=3D"font-wei=
+ght:700">CARTE FNAC+</span><br>Vos avantages adh=E9rents exclusifs
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- FIN Fnac Vie Digitale optn Microsoft -->
+                     =20
+                     =20
+                     =20
+                     =20
+                     =20
+                     =20
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;clear:both;width:608=
+px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                        <tr>
+                          <td height=3D"20" style=3D"height:20px;font-size:=
+20px;line-height:20px"> &nbsp; </td>
+                        </tr>
+                      </table>
+                      <!-- DEBUT Footer -->
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;width:608px;" class=
+=3D"d_center t_flnone t_mauto t_w78p m_flnone m_mauto m_w90p" role=3D"prese=
+ntation">
+                        <tr style=3D"padding: 0; text-align: left; vertical=
+-align: top;">
+                          <td style=3D"border-collapse: collapse; color: #5=
+c5c5c; font-family:Arial,Helvetica,sans-serif; font-size: 11px; font-weight=
+: normal; hyphens: auto; line-height: 15px; margin: 0; padding: 0; text-ali=
+gn: left; vertical-align: top; word-break: break-word;">
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                           =20
+                            Fnac utilise dans ses e-mails des technologies =
+de type &quot; pixel &quot; pour contextualiser et am=E9liorer le contenu d=
+es emails que vous recevez, et recueillir des statistiques sur l'ouverture =
+des emails et les clics r=E9alis=E9s sur leur contenu.
+                            <br> <br>
+                            Consulter la politique Fnac de protection des d=
+onn=E9es personnelles en suivant ce <a href=3D"https://emea01.safelinks.pro=
+tection.outlook.com/?url=3Dhttps%3A%2F%2Ffr.r.emails.fnac.com%2Fr%2F%3Fid%3=
+Dh3678c53f%2Cad09d144%2C446a00c%26e%3DZW1sLXB1Ymxpc2hlcj1OZW9sYW5lJmVtbC1uY=
+W1lPTEzNTgxMDU4MSZPcmlnaW5DbGljaz1ZRVMmT3JpZ2luPW1haWxfNDQ2YTAwYyZjbGllbnRV=
+aWQ9MQ%26s%3DPG5M3JiGcCmlZ3y8sxluStOs3WZrX1nSGSrqLevdlDU&amp;data=3D05%7C02=
+%7C%7C72e961eddf084c4440e408dcd2fa6a07%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7=
+C1%7C0%7C638617220178206664%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3De5nVVp=
+EzWUVj2eOci5U6XXWv9THorl%2BBbmlQRWk6QF0%3D&amp;reserved=3D0" originalsrc=3D=
+"https://fr.r.emails.fnac.com/r/?id=3Dh3678c53f,ad09d144,446a00c&amp;e=3DZW=
+1sLXB1Ymxpc2hlcj1OZW9sYW5lJmVtbC1uYW1lPTEzNTgxMDU4MSZPcmlnaW5DbGljaz1ZRVMmT=
+3JpZ2luPW1haWxfNDQ2YTAwYyZjbGllbnRVaWQ9MQ&amp;s=3DPG5M3JiGcCmlZ3y8sxluStOs3=
+WZrX1nSGSrqLevdlDU" shash=3D"yEaVD9jd8LbVD2ygqs3G1pJMLqe/FUaT0onMbfOXm4cV9w=
+bJOXbhjzDGVJC2s/onQDbnc3P6TRCFbCGSkrigMqJFbuAIPthho/EOR/b25pe7H/g+jPzdkPif+=
+1URF/8yGA/rruKI2+GHWD9ukO5t42mORCtv6Zvp6CBwFlrCwoc=3D" style=3D"text-decora=
+tion: underline;"><span style=3D"color: #5c5c5c;">lien</span></a>.
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- FIN Footer -->
+                      <table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"border-spacing:0;vertical-align:top;margin:0 auto;border-co=
+llapse:collapse;padding:0;">
+                        <tr style=3D"vertical-align:top;padding:0;">
+                          <td width=3D"80" style=3D"margin:0;text-align:lef=
+t;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;=
+vertical-align:top;padding:0;font-size:0;line-height:0;"><img src=3D"http:/=
+/www.gstatic.com/gmktg/mtv-img/spacer.png" width=3D"80" height=3D"1"></td>
+                          <td width=3D"80" style=3D"margin:0;text-align:lef=
+t;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;=
+vertical-align:top;padding:0;font-size:0;line-height:0;"><img src=3D"http:/=
+/www.gstatic.com/gmktg/mtv-img/spacer.png" width=3D"80" height=3D"1"></td>
+                          <td width=3D"80" style=3D"margin:0;text-align:lef=
+t;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;=
+vertical-align:top;padding:0;font-size:0;line-height:0;"><img src=3D"http:/=
+/www.gstatic.com/gmktg/mtv-img/spacer.png" width=3D"80" height=3D"1"></td>
+                          <td width=3D"80" style=3D"margin:0;text-align:lef=
+t;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;=
+vertical-align:top;padding:0;font-size:0;line-height:0;"><img src=3D"http:/=
+/www.gstatic.com/gmktg/mtv-img/spacer.png" width=3D"80" height=3D"1"></td>
+                          <td width=3D"80" style=3D"margin:0;text-align:lef=
+t;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;=
+vertical-align:top;padding:0;font-size:0;line-height:0;"><img src=3D"http:/=
+/www.gstatic.com/gmktg/mtv-img/spacer.png" width=3D"80" height=3D"1"></td>
+                          <td width=3D"80" style=3D"margin:0;text-align:lef=
+t;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;=
+vertical-align:top;padding:0;font-size:0;line-height:0;"><img src=3D"http:/=
+/www.gstatic.com/gmktg/mtv-img/spacer.png" width=3D"80" height=3D"1"></td>
+                        </tr>
+                      </table>
+                      <table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"608" align=3D"center" style=3D"margin:auto;clear:both;width:608=
+px" class=3D"d_center t_w100p m_w100p" role=3D"presentation">
+                        <tr>
+                          <td height=3D"20" style=3D"height:20px;font-size:=
+20px;line-height:20px"> &nbsp; </td>
+                        </tr>
+                      </table>
+                      <!-- EO - WRAPPER / 8a6190e9-3ef8-4d0b-963f-d33479fff=
+22c -->
+                      <! -- FIN Aide 3 versions -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!-- EO - SECTION / a56b30c3-d206-4508-bb44-505564673f45 -->
+        </td>
+      </tr>
+    </table>
+  <img height=3D"0" width=3D"0" alt=3D"" src=3D"https://fr.r.emails.fnac.co=
+m/r/?id=3Dh3678c53f,ad09d144,1"></body>
+</html>
+
